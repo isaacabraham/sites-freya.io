@@ -132,7 +132,7 @@ Now that you have all the "logic" covered you'll need a way of serving it. You c
 .. code-block:: fsharp
 
    type HelloWorld () =
-       member __.Configure () =
+       member __.Configuration () =
            OwinAppFunc.ofFreya (router)
 
    open System
